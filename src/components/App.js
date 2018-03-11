@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 
-import {Topic} from "./Topic"
 import {Header} from "./Header"
 import '../styles/app.less'
 import {Footer} from "./Footer";
