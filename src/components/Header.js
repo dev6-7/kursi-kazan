@@ -5,7 +5,7 @@ import { Navbar, Nav, NavItem, Glyphicon } from 'react-bootstrap';
 export class Header extends React.Component {
     render() {
         return (
-            <Navbar fixedTop>
+            <Navbar>
                 <Navbar.Header>
                     <Navbar.Brand>
                         <a href="/">
@@ -13,26 +13,28 @@ export class Header extends React.Component {
                         </a>
                     </Navbar.Brand>
                 </Navbar.Header>
-                <Navbar.Collapse>
+                {/*<Navbar.Collapse>
                     <Nav pullRight>
                         <NavItem
                             eventKey={1}
                             href="#">
-                            Home
+                            <Glyphicon glyph={"home"}/>
+                            {' Главная'}
                         </NavItem>
                         <NavItem
                             eventKey={2}
                             href="#">
-                            Shop
+                            <Glyphicon glyph="modal-window" />
+                            {' Заявка'}
                         </NavItem>
                         <NavItem
                             eventKey={3}
                             href="#">
-                            <Glyphicon glyph="shopping-cart" />
-                            {' Cart'}
+                            <Glyphicon glyph="list" />
+                            {' Контакты'}
                         </NavItem>
                     </Nav>
-                </Navbar.Collapse>
+                </Navbar.Collapse>*/}
             </Navbar>
         );
     }
