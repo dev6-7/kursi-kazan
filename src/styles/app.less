@@ -14,9 +14,27 @@ html {
         display: table;
         text-align: center;
 
+        span{
+          font-size: 20px;
+          font-weight: bold;
+        }
+
         li{
           display: inline-block;
           float: none;
+          font-size: 20px;
+          font-weight: bold;
+
+        }
+        li a {
+          color: black;
+        }
+        li:hover{
+          background-color: silver;
+        }
+        li a:hover{
+          text-decoration: none;
+          color: white;
         }
       }
     }
@@ -25,8 +43,57 @@ html {
       height: 350px;
     }
 
+    .whyDiv {
+      display: block;
+      text-align: center;
+      h4 {
+        text-decoration: underline;
+      }
+      div {
+        display: inline-block;
+        margin: 0 1.5em 2em;
+        max-width: 33.3%;
+        height: 10%;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        vertical-align: top;
+        box-sizing: border-box;
+        padding: 1%;
+        p {
+          text-align: left;
+          #citat {
+            text-align: right;
+            font-style: italic;
+          }
+        }
+      }
+    }
+
+    #mainPageTable{
+      width:100%;
+      font-family: initial;
+      padding:10px;
+      td {
+        padding: 10px;
+        width: 33.3%;
+        border: solid #F8F8F8;
+        h4 {
+          text-align: center;
+          text-decoration: underline;
+          font-weight: bold;
+        }
+        p {
+          font-size: 12pt
+        }
+        #citat {
+          text-align: right;
+          font-style: italic;
+        }
+      }
+    }
+
     #welcomeText {
-      margin: 55px;
+      font-family: initial;
+      margin: 30px;
       font-size: large;
       text-align: center;
     }
