@@ -13,17 +13,13 @@ export class MainPage extends React.Component {
 
                     <p>Мы ценим Ваше доверие!</p>
                 </div>
-                <DivBlock/>
+                <MainPageTable/>
                 <div className={"callBackForm"}>
                     <h3>СВЯЖИТЕСЬ С НАМИ ПРЯМО СЕЙЧАС</h3>
                     <CallBackForm/>
                 </div>
-
                 <div>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
+                    <iframe src="https://yandex.ru/map-widget/v1/-/CBebUTTcCC" width="100%" height="400" frameborder="0"></iframe>
                 </div>
             </div>
         );
