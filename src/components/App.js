@@ -13,7 +13,9 @@ export class App extends Component {
             <div>
                 <Header/>
                 <MyCarousel/>
-                <Menu/>
+                <div id="menu">
+                    <Menu/>
+                </div>
                 <Main/>
                 <Footer/>
             </div>
