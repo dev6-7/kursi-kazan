@@ -1,6 +1,7 @@
 import React from 'react';
 import {MainPageTable} from "./MainPageTable";
 import {DivBlock} from "./DivBlock";
+import {CallBackForm} from "./CallBackForm";
 
 export class MainPage extends React.Component {
     render() {
@@ -13,6 +14,10 @@ export class MainPage extends React.Component {
                     <p>Мы ценим Ваше доверие!</p>
                 </div>
                 <DivBlock/>
+                <div className={"callBackForm"}>
+                    <h3>СВЯЖИТЕСЬ С НАМИ ПРЯМО СЕЙЧАС</h3>
+                    <CallBackForm/>
+                </div>
 
                 <div>
                     <br/>
