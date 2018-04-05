@@ -26,7 +26,7 @@ export class Menu extends React.Component {
                     <span>|</span>
                     <NavItem
                         eventKey={++eventKey}>
-                        <Link to='/contact'> КОНТАКТЫ</Link>
+                        <Link to='/contacting'> КОНТАКТЫ</Link>
                     </NavItem>
                 </Nav>
             </Navbar>

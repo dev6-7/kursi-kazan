@@ -8,6 +8,7 @@ import {Header} from "./Header";
 import {MyCarousel} from "./MyCarousel";
 
 export class App extends Component {
+
     render () {
         return (
             <div>

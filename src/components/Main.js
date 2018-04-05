@@ -14,7 +14,7 @@ export class Main extends Component {
                     <Route exact path={'/'} render={()=>(
                         <MainPage/>
                     )}/>
-                    <Route path={'/contact'} component={Contact}/>
+                    <Route path={'/contacting'} component={Contact}/>
 
                     TODO добавить когда появятся страницы
                     {/*<Route path={'/request'} component={Contact}/>

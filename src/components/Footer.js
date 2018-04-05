@@ -18,7 +18,7 @@ export class Footer extends React.Component {
                         </NavItem>
                         <NavItem
                             eventKey={3}>
-                            <Link to='/contact'> КОНТАКТЫ</Link>
+                            <Link to='/contacting'> КОНТАКТЫ</Link>
                         </NavItem>
                     </Nav>
 
