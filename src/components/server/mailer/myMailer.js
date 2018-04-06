@@ -1,12 +1,13 @@
 const mailer = require('nodemailer')
+const config = require('./conf/mailerConfig')
 
 let transporter = mailer.createTransport({
     service: 'mail.ru',
     secure: false,
     port: 25,
     auth: {
-        user: 'ucplaneta70@mail.ru',
-        pass: 'vcxz0987'
+        user: config.user,
+        pass: config.pass
     },
     tls: {
         rejectUnauthorized: false
@@ -15,17 +16,18 @@ let transporter = mailer.createTransport({
 });
 
 let HelperOptions = {
-    from: '"Smarty" <ucplaneta70@mail.ru>',
-    to: 'ucplaneta70@mail.ru',
-    subject: 'Заявка',
-    text: 'testtesttesttest'
+    from: config.from,
+    to: config.user,
+    subject: config.subject,
+    text: ''
 }
 
 /*отправка сообщения*/
 
 const sendMail = (phone, name) => {
+    HelperOptions.text = 'Телефон: ' + phone + ' Имя: ' + name;
+
     return new Promise((resolve, reject) => {
-        HelperOptions.text += ' ' + phone + ' ' + name;
         transporter.sendMail(HelperOptions,
             (err, info) => {
                 if (err) reject(err);
@@ -33,11 +35,6 @@ const sendMail = (phone, name) => {
                     phone: phone,
                     name: name
                 });
-                /*if (err) {
-                    console.log(err)
-                }
-                console.log(info.envelope);
-                console.log(info.messageId);*/
             });
     });
 };

@@ -1,7 +1,11 @@
 const user = 'ucplaneta70@mail.ru'
 const pass = 'vcxz0987'
+const subject = 'Заявка'
+const from = '"Smarty" <ucplaneta70@mail.ru>'
 
-export default {
+module.exports={
     user,
-    pass
+    pass,
+    subject,
+    from
 }

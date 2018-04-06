@@ -22,11 +22,18 @@ app.get('/users', function(req, res, next) {
 });
 
 app.post('/contact', (req, res) => {
-    const { phone = '', name = ''} = req.query;
+    const { phone = '', name = ''} = req.body;
+    console.log(req.body);
+    console.log(phone);
+    console.log(name);
 
     mailer(phone, name).then(()=>{
-        console.log('123');
+        console.log('request was posted');
     });
+
+    res.json(
+        {status: 'SUCCESS', data: {phone: phone, name: name}}
+    );
 
     /*mailer(phone, name).then(() => {
         console.log(`Sender phone "${phone}" name <${name}>`);
