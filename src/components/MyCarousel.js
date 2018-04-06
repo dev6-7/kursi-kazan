@@ -30,6 +30,12 @@ export class MyCarousel extends React.Component {
                 activeIndex={index}
                 direction={direction}
                 onSelect={this.handleSelect}
+                slide = {true}
+                interval = {100}
+                pauseOnHover = {true}
+                wrap = {true}
+                indicators = {true}
+                controls = {true}
             >
                 <Carousel.Item>
                     <img height={350} src="../img/learn.jpg" />

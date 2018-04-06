@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 
-import {Grid, Row, Col, Image, Panel, Button} from 'react-bootstrap';
 import {Route, Switch} from "react-router-dom";
-import {Menu} from "./Menu";
 import {Contact} from "./Contact";
 import {MainPage} from "./MainPage";
+import {Kurses} from "./Kurses";
+import {RequestPage} from "./RequestPage";
 
 export class Main extends Component {
     render () {
@@ -15,10 +15,8 @@ export class Main extends Component {
                         <MainPage/>
                     )}/>
                     <Route path={'/contacting'} component={Contact}/>
-
-                    TODO добавить когда появятся страницы
-                    {/*<Route path={'/request'} component={Contact}/>
-                    <Route path={'/kursi'} component={Contact}/>*/}
+                    <Route path={'/request'} component={RequestPage}/>
+                    <Route path={'/kursi'} component={Kurses}/>
                 </Switch>
             </main>
         )
