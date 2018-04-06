@@ -18,8 +18,8 @@ export class CallBackForm extends React.Component {
         return (
             <div id="callBackForm">
                 <input type="text" id="name" name="name" placeholder="Имя" required/>
-                <input type="text" id="phone" name="phone" placeholder="+7 (937) 5229091" required/>
-                <button id='sendPostBtn' onClick={this.sendPost}>Отправить</button>
+                <input type="text" id="phone" name="phone" placeholder="Номер телефона" required/>
+                <a id='sendPostBtn' class='button' onClick={this.sendPost}>Отправить</a>
             </div>
         );
     }
