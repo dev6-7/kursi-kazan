@@ -3,40 +3,11 @@ import React from 'react';
 import { Carousel, CarouselItem } from 'react-bootstrap';
 
 export class MyCarousel extends React.Component {
-    constructor(props, context) {
-        super(props, context);
-
-        this.handleSelect = this.handleSelect.bind(this);
-
-        this.state = {
-            index: 0,
-            direction: null
-        };
-    }
-
-    handleSelect(selectedIndex, e) {
-        /*alert(`selected=${selectedIndex}, direction=${e.direction}`);*/
-        this.setState({
-            index: selectedIndex,
-            direction: e.direction
-        });
-    }
 
     render() {
-        const { index, direction } = this.state;
 
         return (
-            <Carousel
-                activeIndex={index}
-                direction={direction}
-                onSelect={this.handleSelect}
-                slide = {true}
-                interval = {100}
-                pauseOnHover = {true}
-                wrap = {true}
-                indicators = {true}
-                controls = {true}
-            >
+            <Carousel>
                 <Carousel.Item>
                     <img height={350} src="../img/learn.jpg" />
                     <Carousel.Caption>

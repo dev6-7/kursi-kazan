@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 import '../styles/app.less'
+import '../styles/footer.less'
 import {Menu} from "./Menu"
 import {Footer} from "./Footer";
 import {Main} from "./Main";
